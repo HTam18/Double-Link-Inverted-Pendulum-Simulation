@@ -1,0 +1,54 @@
+Phase 5: Simulink Closed-loop Model
+===================================
+
+State vector:
+X = [x; x_dot; theta1; theta1_dot; theta2; theta2_dot]
+
+Selected controller:
+C13_cart_weight_8_R20
+
+Control law before saturation:
+u_raw = -K*x
+
+Control law after actuator limit:
+u_sat = saturation(u_raw, -u_max, +u_max)
+
+Q matrix:
+[8 0 0 0 0 0;0 1 0 0 0 0;0 0 40 0 0 0;0 0 0 2 0 0;0 0 0 0 40 0;0 0 0 0 0 2]
+
+R matrix:
+2
+
+K gain:
+[2 3.80752 -144.853 -13.9716 176.747 38.7149]
+
+u_max: 15.000000 N
+
+Closed-loop poles without saturation:
+[-6.32243;-5.24988;-3.63558+0.640445i;-3.63558-0.640445i;-0.924102+0.77832i;-0.924102-0.77832i]
+
+Closed-loop stable without saturation: 1
+
+Max abs theta1: 10.793403 deg
+Max abs theta2: 6.827943 deg
+Max abs cart position: 0.726916 m
+Max abs u_raw: 16.838953 N
+Max abs u_sat: 15.000000 N
+Saturation used: 1
+Saturation limit respected: 1
+Final theta1: 0.002327386 deg
+Final theta2: 0.002560057 deg
+Final cart position: -0.000397082 m
+Theta1 settling time threshold: +/-0.500 deg
+Theta2 settling time threshold: +/-0.500 deg
+Cart settling time threshold: +/-0.020 m
+Theta1 settling time: 4.8819 s
+Theta2 settling time: 4.8819 s
+Cart settling time: 4.4819 s
+
+Comparison with Phase 4 MATLAB result:
+Max abs theta1 difference: 0.274454 deg
+Max abs theta2 difference: 0.157431 deg
+Max abs cart difference: 0.006193 m
+Max abs control difference: 1.838953 N
+Note: Phase 4 uses raw u without saturation. Phase 5 uses saturated u. Small differences are expected when u_raw exceeds u_max.
