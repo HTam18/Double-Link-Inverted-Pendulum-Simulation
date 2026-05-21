@@ -44,43 +44,6 @@ Max abs theta1: 19.669646 deg
 Max abs theta2: 12.355712 deg
 Max abs cart position: 1.325372 m
 
-## Project structure
-double_link_inverted_pendulum_control/
-├── README.md
-├── docs/
-│   ├── project_overview.md
-│   ├── mathematical_model.md
-│   ├── controller_design_lqr.md
-│   ├── closed_loop_simulation.md
-│   ├── lqr_tuning_force_check.md
-│   ├── simulink_closed_loop_model.md
-│   ├── result_analysis.md
-│   ├── test_plan.md
-│   ├── future_work.md
-│   └── references.md
-├── models/
-│   └── double_link_lqr.slx
-├── scripts/
-│   ├── check_environment.m
-│   ├── parameters_double_link.m
-│   ├── state_space_model_double.m
-│   ├── run_open_loop_double.m
-│   ├── design_lqr_double.m
-│   ├── run_closed_loop_lqr.m
-│   ├── tune_lqr_qr_double.m
-│   ├── create_double_link_lqr_model.m
-│   ├── run_simulink_lqr.m
-│   ├── analyze_results_double.m
-│   └── run_phase6_disturbance_tests.m
-├── results/
-│   ├── phase2_open_loop/
-│   ├── phase3_lqr_design/
-│   ├── phase4_closed_loop/
-│   ├── phase45_lqr_tuning/
-│   ├── phase5_simulink_closed_loop/
-│   └── phase6_disturbance_analysis/
-└── media/
-
 ## How to run
 Open MATLAB and set the current folder to the project root: E:\BackupDown\PROJECT2
 
