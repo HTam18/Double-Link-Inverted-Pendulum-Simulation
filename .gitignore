@@ -1,0 +1,27 @@
+# MATLAB temporary files
+*.asv
+*.m~
+*.slx.autosave
+*.slxc
+*.mex*
+
+# Simulink generated folders
+slprj/
+simscape/
+
+# MATLAB cache and generated project files
+*.mltbx
+*.prj
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large optional media output
+media/*.mp4
+media/*.avi
+media/*.gif
+
+# Keep result summaries and plots by default.
+# Add large raw result files manually if the repository becomes too large.
