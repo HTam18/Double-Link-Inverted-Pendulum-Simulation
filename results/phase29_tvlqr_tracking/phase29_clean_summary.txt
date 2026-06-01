@@ -1,0 +1,111 @@
+Phase 29 clean TVLQR tracking summary
+phase29_pass = 1
+ideal_tracker_pass = 1
+actuator_tracker_pass = 1
+result_file = results\phase29_tvlqr_tracking\tvlqr_tracking_result.mat
+
+[audit]
+max_abs_x_ref_m = 0.530298606901
+rail_margin_m = 1.4697013931
+max_abs_u_ref_N = 8.27926522191
+force_margin_N = 6.72073477809
+final_max_angle_error_rad = 3.64690393995e-05
+final_velocity_norm = 7.63464256041e-05
+force_margin_warning = 0
+actuator_tracking_ready = 1
+design_pass = 1
+T0_exact_replay_pass = 0
+pass = 1
+
+[T1_open_loop]
+finite_pass = 1
+rail_pass = 1
+force_pass = 1
+saturation_pass = 1
+handoff_pass = 0
+tracking_reaches_handoff = 0
+final_angle_error_1_rad = 2.5772300981
+final_angle_error_2_rad = 0.914251342808
+final_max_angle_error_rad = 2.5772300981
+final_velocity_norm = 1.92985180686
+rms_state_error = 3.69768029716
+rms_angle_error_tail = 2.64636138031
+max_abs_x_m = 0.530494561093
+max_abs_u_cmd_N = 8.27926522191
+max_abs_u_actual_N = 8.27926522191
+saturation_fraction = 0
+better_rms = 1
+better_tail_angle_rms = 1
+better_final = 1
+constraints_pass = 1
+tracking_gate_pass = 0
+
+[T2_ideal_tvlqr]
+finite_pass = 1
+rail_pass = 1
+force_pass = 1
+saturation_pass = 1
+handoff_pass = 1
+tracking_reaches_handoff = 1
+final_angle_error_1_rad = 1.23389705564e-06
+final_angle_error_2_rad = 9.59693335156e-06
+final_max_angle_error_rad = 9.59693335156e-06
+final_velocity_norm = 8.44865186107e-05
+rms_state_error = 0.00481364467884
+rms_angle_error_tail = 8.71339347496e-05
+max_abs_x_m = 0.529455860419
+max_abs_u_cmd_N = 8.27938888982
+max_abs_u_actual_N = 8.27938888982
+saturation_fraction = 0
+better_rms = 1
+better_tail_angle_rms = 1
+better_final = 1
+constraints_pass = 1
+tracking_gate_pass = 1
+
+[T3_actuator_tvlqr]
+finite_pass = 1
+rail_pass = 1
+force_pass = 1
+saturation_pass = 1
+handoff_pass = 1
+tracking_reaches_handoff = 1
+final_angle_error_1_rad = 2.61323427075e-06
+final_angle_error_2_rad = 1.81054194095e-05
+final_max_angle_error_rad = 1.81054194095e-05
+final_velocity_norm = 0.00472415157048
+rms_state_error = 0.0366293453805
+rms_angle_error_tail = 0.00183152617702
+max_abs_x_m = 0.526049521068
+max_abs_u_cmd_N = 8.30713890086
+max_abs_u_actual_N = 8.30693862313
+saturation_fraction = 0
+better_rms = 1
+better_tail_angle_rms = 1
+better_final = 1
+constraints_pass = 1
+tracking_gate_pass = 1
+
+[T4_noise_tvlqr]
+finite_pass = 1
+rail_pass = 1
+force_pass = 1
+saturation_pass = 1
+handoff_pass = 1
+tracking_reaches_handoff = 1
+final_angle_error_1_rad = 0.0147876212624
+final_angle_error_2_rad = 0.0153021250309
+final_max_angle_error_rad = 0.0153021250309
+final_velocity_norm = 0.0670804810732
+rms_state_error = 0.0452299231051
+rms_angle_error_tail = 0.0109580949857
+max_abs_x_m = 0.5262823645
+max_abs_u_cmd_N = 8.2764987551
+max_abs_u_actual_N = 8.27630351973
+saturation_fraction = 0
+better_rms = 1
+better_tail_angle_rms = 1
+better_final = 1
+constraints_pass = 1
+tracking_gate_pass = 1
+

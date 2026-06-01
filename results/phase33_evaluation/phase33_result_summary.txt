@@ -1,0 +1,18 @@
+Phase 33 MATLAB/Simulink evaluation summary
+created_at = 2026-06-01 13:36:30
+scenario_count = 7
+pass_count = 6
+phase29_T4_pass = 1
+phase30_pass = 1
+phase31_pass = 1
+phase32_pass = 1
+phase33_pass = 1
+fail_reason = none
+
+[S1] Phase 29 T1 open-loop feedforward | pass=0 | angle=2.57723 | vel=1.92985 | max_x=0.530495 | sat=0 | reason=not_pass_or_baseline
+[S2] Phase 29 T2 ideal TVLQR | pass=1 | angle=9.59693e-06 | vel=8.44865e-05 | max_x=0.529456 | sat=0 | reason=none
+[S3] Phase 29 T3 actuator delay TVLQR | pass=1 | angle=1.81054e-05 | vel=0.00472415 | max_x=0.52605 | sat=0 | reason=none
+[S4] Phase 29 T4 actuator delay + sensor noise TVLQR | pass=1 | angle=0.0153021 | vel=0.0670805 | max_x=0.526282 | sat=0 | reason=none
+[S5] Phase 30 full hybrid MATLAB | pass=1 | angle=7.74681e-05 | vel=0.00463942 | max_x=0.508491 | sat=0 | reason=none
+[S6] Phase 31 standard Monte Carlo robustness | pass=1 | angle=2.48273 | vel=15.66 | max_x=NaN | sat=0.00324484 | reason=none
+[S7] Phase 32 Simulink equivalence | pass=1 | angle=7.74681e-05 | vel=0.00463942 | max_x=0.508491 | sat=0 | reason=none
