@@ -1,27 +1,33 @@
-# MATLAB temporary files
+# MATLAB / Simulink generated files
 *.asv
-*.m~
-*.slx.autosave
 *.slxc
 *.mex*
-
-# Simulink generated folders
 slprj/
-simscape/
+*.autosave
+*.m~
 
-# MATLAB cache and generated project files
-*.mltbx
-*.prj
-*.log
+# MATLAB raw result logs
+results/**/*.mat
+results/**/*.fig
+results/**/*.png
+results/**/*.gif
+results/**/*.mp4
 
-# OS files
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS and editor files
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
-# Large optional media output
-media/*.mp4
-media/*.avi
-media/*.gif
-
-# Keep result summaries and plots by default.
-# Add large raw result files manually if the repository becomes too large.
+# Temporary files
+*.tmp
+*.bak
+*.log
