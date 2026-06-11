@@ -2,7 +2,7 @@
 
 A MATLAB backend and Python GUI project for simulating, evaluating and visualizing a cart mounted double link pendulum. The project focuses on multi target transition control, external force recovery and result inspection through a lightweight Python viewer.
 
-![Python GUI demo](assets/Transition.gif)
+![Python GUI demo](assets/Transistion.gif)
 
 ## Overview
 
